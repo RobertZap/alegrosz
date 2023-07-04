@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Products() {
     const [products, setProducts] = useState([]);
@@ -37,6 +38,7 @@ function Products() {
                     <h2>{product.name}</h2>
                     <p>{product.category}</p>
                     <p>{product.price}</p>
+                    <Link to={`/product/${product.id}`}>Details</Link>
                 </div>
             ))}
         </>
