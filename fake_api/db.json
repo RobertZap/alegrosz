@@ -1,23 +1,19 @@
 {
   "products": [
     {
-      "id": 2,
-      "name": "Telewizor LED",
-      "description": "Duży telewizor LED o wysokiej rozdzielczości.",
-      "price": 1499.99,
-      "stockCount": 5
+      "id": 2
     },
     {
       "id": 4,
-      "name": "Słuchawki Bluetooth",
-      "description": "Bezprzewodowe słuchawki z długim czasem pracy baterii.",
-      "price": 129.99,
-      "stockCount": 15
+      "name": "asdas",
+      "description": "asdasd",
+      "price": "22",
+      "stockCount": "22"
     },
     {
       "id": 5,
       "name": "Konsola do gier XYZ",
-      "description": "Najnowsza konsola do gier z wyjątkowymi grafikami.",
+      "description": "aaa",
       "price": 499.99,
       "stockCount": 3
     },

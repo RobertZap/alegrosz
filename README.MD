@@ -47,3 +47,15 @@ URL / URI:
     - ? - zmienne ?="wartosc"
     - & oddzielenie zmiennych
     - # przeniesienie do znacznika o takim id jaki jest podany
+
+
+
+Algorytm do edycji: 
+
+    - tworze komponent do edycji (pusty)
+    - podpinam do rootera
+    - w product detail musze zrobic przekierowanie na komponent edycyjny (Link)
+    - w komponencie edycji robie formularz
+    - pobieram dane z serwera po ID i wypelniam firmularz
+    - uzytkownik po edycji klika w zapisz 
+    - wysylamy dane do serwera, robimy przekierowanie na strone tego produktu 
