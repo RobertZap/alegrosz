@@ -21,11 +21,6 @@ function Products() {
 
     return (
         <>
-            <input
-                type="text"
-                // value={search}
-                // onChange={}
-            />
             {products.map((product) => (
                 <div
                     key={product.id}
