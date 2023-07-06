@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Grid, TextField } from "@mui/material";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
 
 function AddProduct() {
     const [name, setName] = useState("");
@@ -33,52 +36,66 @@ function AddProduct() {
     }
 
     return (
-        <div>
-            <h1>Add new product</h1>
-            <form onSubmit={handleAddProduct}>
+        <Grid item xs={12} md={8}>
+            <Typography variant="h2" component="h1">
+                Add new product
+            </Typography>
+            <form
+                onSubmit={handleAddProduct}
+                style={{ display: "flex", flexDirection: "column", gap: 10 }}
+            >
                 <div>
-                    <label htmlFor="name">Name</label>
-                    <input
-                        type="text"
+                    <TextField
                         id="name"
+                        label="Name"
+                        variant="filled"
+                        fullWidth
                         value={name}
                         onChange={(event) => setName(event.target.value)}
                     />
                 </div>
                 <div>
-                    <label htmlFor="description">Description</label>
-                    <textarea
-                        name="description"
-                        id="descriptiom"
-                        cols="30"
-                        rows="10"
+                    <TextField
+                        id="description"
+                        label="Description"
+                        variant="filled"
+                        fullWidth
                         value={description}
                         onChange={(event) => setDescription(event.target.value)}
+                        multiline
                     />
                 </div>
                 <div>
-                    <label htmlFor="price">Price</label>
-                    <input
-                        type="number"
-                        name="price"
+                    <TextField
                         id="price"
+                        label="Price"
+                        variant="filled"
+                        fullWidth
                         value={price}
                         onChange={(event) => setPrice(event.target.value)}
+                        type="number"
                     />
                 </div>
                 <div>
-                    <label htmlFor="stockCount">Stock count</label>
-                    <input
-                        type="numer"
-                        name="stockCount"
+                    <TextField
                         id="stockCount"
+                        label="Stock Count"
+                        variant="filled"
+                        fullWidth
                         value={stockCount}
                         onChange={(event) => setStockCount(event.target.value)}
+                        type="number"
                     />
                 </div>
-                <button type="submit">Add product</button>
+                <Button
+                    sx={{ alignSelf: "flex-end" }}
+                    variant="contained"
+                    type="submit"
+                >
+                    Add product
+                </Button>
             </form>
-        </div>
+        </Grid>
     );
 }
 

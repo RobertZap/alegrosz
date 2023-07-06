@@ -1,5 +1,7 @@
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
 
 function Product() {
     const { productId } = useParams();
@@ -41,30 +43,36 @@ function Product() {
 
     return (
         <div>
-            <h1>{product.name}</h1>
+            <Typography variant="h2" component="h1">
+                {product.name}
+            </Typography>
             <p>{product.description}</p>
             <p>Price ${product.price}</p>
             <br />
-            <button onClick={handleDelete}>Delete Product</button>
-            <Link
-                style={{
-                    padding: 10,
-                    margin: 10,
-                    display: "inline-block",
-                    textDecoration: "none",
-                }}
-                to={`/edit-product/${product.id}`}
+            <Button
+                onClick={handleDelete}
+                sx={{ marginRight: 3 }}
+                variant="contained"
             >
-                Edit {product.name}
-            </Link>
-            <Link
-                style={{
-                    textDecoration: "none",
-                }}
-                to="/"
-            >
-                Back
-            </Link>
+                Delete Product
+            </Button>
+
+            <Button sx={{ marginRight: 3 }} variant="contained">
+                <Link to={`/edit-product/${product.id}`}>
+                    Edit {product.name}
+                </Link>
+            </Button>
+
+            <Button sx={{ marginRight: 3 }} variant="contained">
+                <Link
+                    style={{
+                        textDecoration: "none",
+                    }}
+                    to="/"
+                >
+                    Back
+                </Link>
+            </Button>
         </div>
     );
 }

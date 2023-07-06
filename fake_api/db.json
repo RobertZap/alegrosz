@@ -1,33 +1,23 @@
 {
   "products": [
     {
-      "id": 2
-    },
-    {
-      "id": 4,
-      "name": "asdas",
+      "id": 2,
+      "name": "PPP",
       "description": "asdasd",
-      "price": "22",
-      "stockCount": "22"
+      "price": "1112",
+      "stockCount": "33"
     },
     {
       "id": 5,
-      "name": "Konsola do gier XYZ",
-      "description": "aaa",
+      "name": "Konsola do gier XYZda",
+      "description": "aaaaas",
       "price": 499.99,
       "stockCount": 3
     },
     {
-      "id": 6,
-      "name": "Aparat cyfrowy",
-      "description": "Profesjonalny aparat cyfrowy z wysoką rozdzielczością.",
-      "price": 799.99,
-      "stockCount": 6
-    },
-    {
       "id": 7,
       "name": "Tablet ABC",
-      "description": "Zwinny tablet z ekranem dotykowym i wieloma funkcjami.",
+      "description": "Zwinny tablet z ekranem dotykowym i wieloma funkcjami.\n\nLUBIE PLACKI",
       "price": 399.99,
       "stockCount": 10
     },
@@ -135,6 +125,27 @@
       "price": "11",
       "stockCount": "12",
       "id": 12
+    },
+    {
+      "name": "",
+      "description": "asdasdasdasdasasdasd\nasd\nasd\na\nsd\nas\ndasd",
+      "price": "0",
+      "stockCount": "01212",
+      "id": 13
+    },
+    {
+      "name": "SuperProdukc",
+      "description": "sss",
+      "price": "12",
+      "stockCount": "1",
+      "id": 14
+    },
+    {
+      "name": "Polska",
+      "description": "wssss",
+      "price": "1111109",
+      "stockCount": "5",
+      "id": 15
     }
   ]
 }

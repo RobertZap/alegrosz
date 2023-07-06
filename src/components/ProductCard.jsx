@@ -4,29 +4,46 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
+import imagePlaceholder from "../assets/Product-Image-Coming-Soon.png";
+import { Chip } from "@mui/material";
 
-export default function ProductCard() {
+export default function ProductCard({ name, price, id }) {
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card
+            sx={{
+                maxWidth: 345,
+                flexGrow: 1,
+                width: "100%",
+                justifyContent: "center",
+                margin: 1,
+            }}
+        >
             <CardMedia
-                sx={{ height: 140 }}
-                image="/static/images/cards/contemplative-reptile.jpg"
+                sx={{ height: 180 }}
+                image={imagePlaceholder}
                 title="green iguana"
             />
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                    Lizard
+                    {name}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
+                    <Chip label={`$${price}`} />
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button size="small">Share</Button>
-                <Button size="small">Learn More</Button>
+                <Button size="small">
+                    <Link to={`/product/${id}`}>Details</Link>
+                </Button>
             </CardActions>
         </Card>
     );
 }
+
+ProductCard.propTypes = {
+    name: PropTypes.string.isRequired,
+    price: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
+};
