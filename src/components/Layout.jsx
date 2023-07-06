@@ -1,5 +1,5 @@
+import Navbar from "./Navbar.jsx";
 import { Outlet } from "react-router-dom";
-import Navbar from "./Navbar";
 import { Container, Grid } from "@mui/material";
 
 function Layout() {

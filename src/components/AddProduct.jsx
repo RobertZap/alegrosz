@@ -7,8 +7,8 @@ import Typography from "@mui/material/Typography";
 function AddProduct() {
     const [name, setName] = useState("");
     const [description, setDescription] = useState("");
-    const [price, setPrice] = useState("0");
-    const [stockCount, setStockCount] = useState("0");
+    const [price, setPrice] = useState("");
+    const [stockCount, setStockCount] = useState("");
 
     const navigate = useNavigate();
 
@@ -24,7 +24,7 @@ function AddProduct() {
     }
 
     async function addProduct(data) {
-        const response = fetch("http://localhost:3000/products", {
+        const response = await fetch("http://localhost:3000/products", {
             method: "post",
             body: JSON.stringify(data),
             headers: {
@@ -37,16 +37,21 @@ function AddProduct() {
 
     return (
         <Grid item xs={12} md={8}>
-            <Typography variant="h2" component="h1">
+            <Typography sx={{ mb: 3 }} variant="h2" component="h1">
                 Add new product
             </Typography>
             <form
                 onSubmit={handleAddProduct}
-                style={{ display: "flex", flexDirection: "column", gap: 10 }}
+                style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: 15,
+                }}
             >
                 <div>
                     <TextField
                         id="name"
+                        name="name"
                         label="Name"
                         variant="filled"
                         fullWidth
@@ -57,6 +62,7 @@ function AddProduct() {
                 <div>
                     <TextField
                         id="description"
+                        name="description"
                         label="Description"
                         variant="filled"
                         fullWidth
@@ -68,6 +74,7 @@ function AddProduct() {
                 <div>
                     <TextField
                         id="price"
+                        name="price"
                         label="Price"
                         variant="filled"
                         fullWidth
@@ -79,7 +86,8 @@ function AddProduct() {
                 <div>
                     <TextField
                         id="stockCount"
-                        label="Stock Count"
+                        name="stockCount"
+                        label="Stock count"
                         variant="filled"
                         fullWidth
                         value={stockCount}

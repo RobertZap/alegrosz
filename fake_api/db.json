@@ -1,23 +1,37 @@
 {
   "products": [
     {
-      "id": 2,
-      "name": "PPP",
-      "description": "asdasd",
-      "price": "1112",
-      "stockCount": "33"
+      "id": 1,
+      "name": "Smartfon",
+      "description": "Najnowszy smartfon z zaawansowanymi funkcjami.",
+      "price": "149",
+      "stockCount": "2"
+    },
+    {
+      "id": 4,
+      "name": "Słuchawki Bluetooth",
+      "description": "Bezprzewodowe słuchawki z długim czasem pracy baterii.",
+      "price": 129.99,
+      "stockCount": 15
     },
     {
       "id": 5,
-      "name": "Konsola dasdasdasd",
-      "description": "aaaaasasd",
+      "name": "Konsola do ",
+      "description": "Najnowsza konsola do gier z wyjątkowymi grafikami.",
       "price": 499.99,
       "stockCount": 3
     },
     {
+      "id": 6,
+      "name": "Aparat cyfrowy",
+      "description": "Profesjonalny aparat cyfrowy z wysoką rozdzielczością.",
+      "price": 799.99,
+      "stockCount": 6
+    },
+    {
       "id": 7,
       "name": "Tablet ABC",
-      "description": "Zwinny tablet z ekranem dotykowym i wieloma funkcjami.\n\nLUBIE PLACKI",
+      "description": "Zwinny tablet z ekranem dotykowym i wieloma funkcjami.",
       "price": 399.99,
       "stockCount": 10
     },
@@ -44,108 +58,38 @@
     },
     {
       "name": "Apple Vision Pro",
-      "description": "Super ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VR",
+      "description": "\nApple Vision Pro to zaawansowane narzędzie do analizy obrazów, które oferuje szeroki zakres możliwości w zakresie rozpoznawania obiektów, analizy twarzy, wykrywania tekstów i wiele więcej. Dzięki swojej potężnej technologii i prostemu interfejsowi, Apple Vision Pro umożliwia programistom tworzenie innowacyjnych aplikacji, które wykorzystują możliwości analizy obrazów na platformie Apple.",
       "price": "3499",
       "stockCount": "50",
-      "id": "SXGaDgT"
-    },
-    {
-      "name": "Apple Vision Pro",
-      "description": "Super ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VR",
-      "price": "3499",
-      "stockCount": "50",
-      "id": "PVXzFl7"
-    },
-    {
-      "name": "Apple Vision Pro",
-      "description": "Super ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VR",
-      "price": "3499",
-      "stockCount": "50",
-      "id": "92iEjwv"
-    },
-    {
-      "name": "Apple Vision Pro",
-      "description": "Super ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VR",
-      "price": "3499",
-      "stockCount": "50",
-      "id": "XC34Nbd"
-    },
-    {
-      "name": "Apple Vision Pro",
-      "description": "Super ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VR",
-      "price": "3499",
-      "stockCount": "50",
-      "id": "cfGlP55"
-    },
-    {
-      "name": "Apple Vision Pro",
-      "description": "Super ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VR",
-      "price": "3499",
-      "stockCount": "50",
-      "id": "04hOZKt"
-    },
-    {
-      "name": "Apple Vision Pro",
-      "description": "Super ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VR",
-      "price": "3499",
-      "stockCount": "50",
-      "id": "OP0SB5l"
-    },
-    {
-      "name": "Apple Vision Pro",
-      "description": "Super ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VR",
-      "price": "3499",
-      "stockCount": "50",
-      "id": "FDAYulM"
-    },
-    {
-      "name": "Apple Vision Pro",
-      "description": "Super ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VR",
-      "price": "3499",
-      "stockCount": "50",
-      "id": "GU2NGcF"
-    },
-    {
-      "name": "Apple Vision Pro",
-      "description": "Super ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VRSuper ultra VR",
-      "price": "3499",
-      "stockCount": "50",
-      "id": "Ub6uxkJ"
-    },
-    {
-      "name": "ceee",
-      "description": "sa",
-      "price": "11",
-      "stockCount": "12",
       "id": 11
     },
     {
-      "name": "ceee",
-      "description": "sa",
-      "price": "11",
-      "stockCount": "12",
+      "name": "Cebula",
+      "description": "Cebula dobra jest",
+      "price": "23",
+      "stockCount": "23456",
       "id": 12
     },
     {
-      "name": "",
-      "description": "asdasdasdasdasasdasd\nasd\nasd\na\nsd\nas\ndasd",
-      "price": "0",
-      "stockCount": "01212",
-      "id": 13
-    },
-    {
-      "name": "SuperProdukc",
-      "description": "sss",
-      "price": "12",
-      "stockCount": "1",
+      "name": "Ziemniaki",
+      "description": "Smierć i nie dowierzanie",
+      "price": "34",
+      "stockCount": "3",
       "id": 14
     },
     {
-      "name": "Polska",
-      "description": "wssss",
-      "price": "1111109",
-      "stockCount": "5",
+      "name": "",
+      "description": "",
+      "price": "5333323",
+      "stockCount": "",
       "id": 15
+    },
+    {
+      "name": "Ziemniaki 4",
+      "description": "Piękne",
+      "price": "24",
+      "stockCount": "234",
+      "id": 16
     }
   ]
 }

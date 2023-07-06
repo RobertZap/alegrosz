@@ -6,36 +6,52 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import imagePlaceholder from "../assets/Product-Image-Coming-Soon.png";
 import { Chip } from "@mui/material";
 
+import imagePlaceholder from "../assets/Product-Image-Coming-Soon.png";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext.jsx";
+
 export default function ProductCard({ name, price, id }) {
+    const [{ total }, setCart] = useContext(CartContext);
+
+    function addProductToCart() {
+        setCart({ total: total + parseFloat(price) });
+    }
+
     return (
-        <Card
-            sx={{
-                maxWidth: 345,
-                flexGrow: 1,
-                width: "100%",
-                justifyContent: "center",
-                margin: 1,
-            }}
-        >
+        <Card sx={{ maxWidth: 345, flexGrow: 1, width: "100%" }}>
             <CardMedia
-                sx={{ height: 180 }}
+                sx={{ height: 345 }}
                 image={imagePlaceholder}
-                title="green iguana"
+                title={name}
             />
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                     {name}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography
+                    variant="body2"
+                    component="div"
+                    color="text.secondary"
+                >
                     <Chip label={`$${price}`} />
                 </Typography>
             </CardContent>
-            <CardActions>
+            <CardActions
+                sx={{ display: "flex", justifyContent: "space-between" }}
+            >
                 <Button size="small">
                     <Link to={`/product/${id}`}>Details</Link>
+                </Button>
+
+                <Button
+                    onClick={addProductToCart}
+                    size="small"
+                    color="success"
+                    variant="outlined"
+                >
+                    Quick Buy
                 </Button>
             </CardActions>
         </Card>

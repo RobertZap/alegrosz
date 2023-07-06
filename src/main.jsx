@@ -1,13 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import router from "./router.jsx";
 import { RouterProvider } from "react-router-dom";
-import { CssBaseline } from "@mui/material";
 import "./index.scss";
+
+import router from "./router.jsx";
+import { CssBaseline } from "@mui/material";
+import CartProvider from "./context/CartContext.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
         <CssBaseline />
-        <RouterProvider router={router} />
+        <CartProvider>
+            <RouterProvider router={router} />
+        </CartProvider>
     </React.StrictMode>
 );

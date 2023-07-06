@@ -37,6 +37,7 @@ class EditProduct extends Component {
         if (!this.state.product) {
             return <h2>Loader...</h2>;
         }
+
         const { product } = this.state;
 
         return (
@@ -111,9 +112,10 @@ class EditProduct extends Component {
         );
     }
 }
+
 EditProduct.propTypes = {
-    id: PropTypes.string.isRequred,
-    navigate: PropTypes.func.isRequred,
+    id: PropTypes.string.isRequired,
+    navigate: PropTypes.func.isRequired,
 };
 
 function EditProductWrapper(props) {

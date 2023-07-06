@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import ProductCard from "./ProductCard.jsx";
 import Box from "@mui/material/Box";
 
@@ -21,7 +22,14 @@ function Products() {
     }
 
     return (
-        <Box sx={{ display: "flex", flexWrap: "wrap", gap: "3" }}>
+        <Box
+            sx={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: 3,
+                justifyContent: "center",
+            }}
+        >
             {products.map((product) => (
                 <ProductCard
                     name={product.name}
